@@ -29,5 +29,15 @@
         <server name="MAIL_DRIVER" value="array"/>
         <server name="QUEUE_CONNECTION" value="sync"/>
         <server name="SESSION_DRIVER" value="array"/>
+
+
+        <env name="DB_CONNECTION" value="mysql_testing"/>
+        <env name="DB_HOST" value="127.0.0.1"/>
+        <env name="DB_PORT" value="3306"/>
+        <env name="DB_DATABASE" value="books_api_testing"/>
+        <env name="DB_USERNAME" value="bravers"/>
+        <env name="DB_PASSWORD" value="55611988"/>
+        
+
     </php>
 </phpunit>

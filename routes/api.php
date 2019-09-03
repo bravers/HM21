@@ -21,7 +21,7 @@ Route::post('/login', 'LoginController@login');
 
 Route::get('/user', 'UserController@show')->middleware('auth');
 
-Route::post('/authors', 'AuthorsController@store');
+Route::post('/authors', 'AuthorsController@store')->name('authors.store');
 Route::get('/authors', 'AuthorsController@index');
 Route::put('/authors/{author}', 'AuthorsController@update');
 Route::delete('/authors/{author}', 'AuthorsController@delete');
