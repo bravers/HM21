@@ -10,4 +10,13 @@ class Author extends Model
     use SoftDeletes;
 
     protected $guarded = [];
+
+    protected $with = [
+    	'file'
+    ];
+
+    public function file()
+    	{
+    		return $this->morphOne(File::class,'owner');
+    	}
 }
